@@ -1,0 +1,33 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 3rem 4rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  color: #333;
+  margin-top: 2rem;
+  flex-direction: column;
+  min-height: 25vh;
+  min-width: 25vh;
+}
+.card p {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.back {
+  align-self: flex-start;
+  cursor: pointer;
+  color: #004ff8;
+}
+.back:visited {
+  color: #004ff8;
+}
+
+@media all and (max-width: 767px) {
+  .card-container {
+    width: auto;
+    padding: 2rem;
+    max-width: 25rem;
+  }
+}

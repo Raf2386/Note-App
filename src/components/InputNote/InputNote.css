@@ -1,0 +1,69 @@
+.inputNote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  margin-top: 6rem;
+  width: 35rem;
+}
+
+.addNote__input,
+.addNote__btn,
+.editNote__input,
+.editNote__btn {
+  padding: 1rem;
+  font-size: 1.8rem;
+  border: none;
+  background: #fff;
+  outline: none;
+  height: 4.1rem;
+}
+
+.editNote__input {
+  background: #004ff8;
+}
+.addNote__input,
+.editNote__input {
+  width: 65%;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+.addNote__btn,
+.editNote__btn {
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: #e6e6e6aa;
+  color: #fff;
+  cursor: pointer;
+  width: 35%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.addNote__btn:hover {
+  color: #004ff8;
+}
+
+.editNote__input {
+  color: #fff;
+}
+.editNote__btn {
+  background: #004ff8;
+  border-left: 2px solid #fff;
+}
+.editNote__btn:hover {
+  color: #e6e6e6aa;
+}
+
+@media all and (max-width: 767px) {
+  .inputNote {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 30rem;
+  }
+
+  .edit-text,
+  .add-text {
+    display: none;
+  }
+}

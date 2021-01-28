@@ -1,0 +1,52 @@
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.note {
+  cursor: default;
+  margin: 0.5rem;
+  background: #fff;
+  font-size: 1.6rem;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.note-item {
+  text-transform: capitalize;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-btn,
+.delete-btn,
+.get-btn {
+  margin-left: 0.5rem;
+  background-color: #fff;
+  height: 100%;
+  color: #004ff8;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  outline: none;
+  font-size: 1.4rem;
+}
+@media all and (max-width: 767px) {
+  .list-container {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 30rem;
+  }
+}
